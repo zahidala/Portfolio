@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 export default function Hero() {
   return (
-      <div className="text-secondary px-4 py-5 mx-5 text-center">
+      <div className="text-secondary px-4 py-5 text-center">
           <div className="py-5">
             <div className="container">
                 <div className="typewriter">
