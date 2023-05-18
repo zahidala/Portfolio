@@ -26,13 +26,18 @@ body {
     color: white !important;
   }
   
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+/* .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
     color: rgba(0, 255, 255, 0.5) !important;
-}
-  
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+} */
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
     color: aqua !important;
 }
+  
+  
+/* .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: aqua !important;
+} */
 
 .container {
     display: flex;
@@ -66,14 +71,6 @@ body {
     50% { border-color: aqua }
   }
 
-@media (max-width: 576px) {
-    .typewriter h1 {
-        font-size: 1.4rem;
-        line-height: 1.2;
-    }
-
-}
-
 .container-button {
     display: flex;
     align-items: center;
@@ -94,14 +91,38 @@ body {
 
 .split-about {
     display: flex;
-    align-items: center;
+    /* align-items: center;  */
+    justify-content: center;
     gap: 5rem;
+    padding-top: 3%;
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+    .typewriter h1 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+
     .container-about {
         width: 80%;
+    }
+
+    .container-projects {
+        width: 80%;
+        padding-top: 10%;
+
     }
 
     .split-about {
@@ -117,11 +138,19 @@ body {
     .container-about {
         width: 80%;
     }
+
+    .container-projects {
+        width: 80%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .container-about {
+        width: 80%;
+    }
+
+    .container-projects {
         width: 80%;
     }
 }
@@ -131,11 +160,19 @@ body {
     .container-about{
         width: 50%;
     }
+
+    .container-projects{
+        width: 50%;
+    }
 }
 
-
+/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     .container-about {
+        width: 50%;
+    }
+
+    .container-projects{
         width: 50%;
     }
 }
@@ -143,6 +180,10 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
     .container-about {
+        width: 50%;
+    }
+
+    .container-projects{
         width: 50%;
     }
 }
