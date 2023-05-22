@@ -108,6 +108,60 @@ body {
     padding-top: 3%;
 }
 
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.card {
+    background-color: #2D3748;
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white
+}
+
+.button-arrangement {
+    display: flex;
+    gap: 10px
+}
+
+.project-buttons {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #9EB9D4;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+.project-buttons:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #9EB9D4;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+.project-buttons:not(:disabled):active {
+    background-color: rgba(255, 255, 255, 0.20);
+    color: #9EB9D4;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+/* Puts SVG and button text on the same height */
+.button-content-align { 
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .typewriter h1 {
