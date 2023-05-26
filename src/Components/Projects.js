@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge'
 
 export default function Projects() {
   return (
@@ -34,6 +35,11 @@ export default function Projects() {
                 </div>
               </Button>
               </div>
+              <div className="badges">
+                <Badge bg="dark">HTML</Badge>
+                <Badge bg="dark">CSS</Badge>
+                <Badge bg="dark">JavaScript</Badge>
+              </div>
             </Card.Body>
           </Card>
 
@@ -64,6 +70,12 @@ export default function Projects() {
                 </div>
               </Button>
               </div>
+              <div className="badges">
+                <Badge bg="dark">Node</Badge>
+                <Badge bg="dark">Express</Badge>
+                <Badge bg="dark">MongoDB</Badge>
+                <Badge bg="dark">Bootstrap</Badge>
+              </div>
             </Card.Body>
           </Card>
 
@@ -92,6 +104,11 @@ export default function Projects() {
                 Demo
                 </div>
               </Button>
+              </div>
+              <div className="badges">
+                <Badge bg="dark">Django</Badge>
+                <Badge bg="dark">PostgreSQL</Badge>
+                <Badge bg="dark">Bootstrap</Badge>
               </div>
             </Card.Body>
           </Card>
@@ -122,6 +139,12 @@ export default function Projects() {
                 Demo
                 </div>
               </Button>
+              </div>
+              <div className="badges">
+                <Badge bg="dark">React</Badge>
+                <Badge bg="dark">Node</Badge>
+                <Badge bg="dark">Express</Badge>
+                <Badge bg="dark">MongoDB</Badge>
               </div>
             </Card.Body>
           </Card>

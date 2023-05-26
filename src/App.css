@@ -162,6 +162,16 @@ body {
     gap: 5px
 }
 
+.badges {
+    display: flex;
+    gap: 5px;
+    padding-top: 3%;
+}
+
+.badges .badge {
+    color: red;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .typewriter h1 {
@@ -186,6 +196,9 @@ body {
         gap: 3rem;
     }
 
+    .badges {
+        padding-top: 5%;
+    }
 }
 
 @media (min-width: 576px) {  
@@ -218,6 +231,10 @@ body {
     .container-projects{
         width: 50%;
     }
+
+    .container p {
+        width: 60%;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -229,15 +246,23 @@ body {
     .container-projects{
         width: 50%;
     }
+
+    .container p {
+        width: 60%;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
     .container-about {
-        width: 50%;
+        width: 40%;
     }
 
     .container-projects{
+        width: 40%;
+    }
+
+    .container p {
         width: 50%;
     }
 }
