@@ -45,7 +45,19 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-  
+
+
+.line-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .typewriter h1 {
     color: #fff;
     /* font-family: monospace; */
@@ -58,7 +70,7 @@ body {
       typing 3.5s steps(40, end),
       blink-caret .5s step-end infinite;
 }
-  
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -70,6 +82,56 @@ body {
     from, to { border-color: transparent }
     50% { border-color: aqua }
   }
+
+  .first_line,
+  .second_line {
+    white-space: nowrap; /* keep text in one line */
+    overflow: hidden; /* hide text behind the cursor */
+    margin: 0 auto;
+    text-align: center;
+    /* font-family: "Major Mono Display", monospace; */
+    /* font-size: 2rem; */
+    font-weight: bold;
+  }
+
+  .first_line {
+    border-right: .05em solid transparent;
+    /* define animation types for text + cursor */
+    animation: typewriter_1 3.5s steps(40,end) 1s 1 normal both,
+      first_cursor .5s steps(40) 10;
+    
+  }
+  .second_line {
+    border-right: .05em solid transparent;
+    /* define animation types for text + cursor */
+    animation: typewriter_2 3.5s steps(40,end) 1s 1 normal both,
+      second_cursor .5s step-end infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+
+  @keyframes typewriter_1 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes typewriter_2 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes first_cursor {
+    from, to { border-color: transparent }
+    50% { border-color: aqua }
+    51%,
+    100% {
+    border-color: transparent;
+    }
+  }
+  @keyframes second_cursor{
+    from, to { border-color: transparent }
+    50% { border-color: aqua }
+  }
+
 
 .container-button {
     display: flex;
@@ -172,9 +234,30 @@ body {
     color: red;
 }
 
+/* .footer-color {
+    background-color: black;
+} */
+
+footer {
+    padding-top: 3%;
+}
+
+.footer-content {
+    background-color: #171923;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    .typewriter h1 {
+    .first_line h1,
+    .second_line h1 {
         font-size: 1.4rem;
         line-height: 1.2;
     }
@@ -266,7 +349,3 @@ body {
         width: 50%;
     }
 }
-
-/* #connect {
-    color: black;
-} */

@@ -5,11 +5,13 @@ export default function Hero() {
   return (
       <div className="text-secondary px-4 py-5 text-center">
           <div className="py-5" style={{marginTop: "5%", marginBottom: "5%"}}>
-            <div className="container">
-                <div className="typewriter">
+            <div className="line-container">
+                <div className="first_line">
                     <h1 className="display-5 fw-bold text-white">Hi, my name is Zahid.</h1>
                 </div>
-                <div className="typewriter">
+            </div>
+            <div className='line-container'>
+                <div className="second_line">
                     <h1 className="display-5 fw-bold" style={{ color: 'aqua' }}>I am a Full Stack Developer.</h1>
                 </div>
             </div>
