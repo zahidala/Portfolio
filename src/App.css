@@ -24,17 +24,18 @@ body {
 
 .navbar-nav .nav-link {
     color: white !important;
-  }
-  
+}
+
 /* .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
     color: rgba(0, 255, 255, 0.5) !important;
 } */
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: aqua !important;
 }
-  
-  
+
+
 /* .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
     color: aqua !important;
 } */
@@ -57,80 +58,84 @@ body {
     margin-right: auto;
 }
 
-
-.typewriter h1 {
-    color: #fff;
-    /* font-family: monospace; */
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .05em solid aqua; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /* letter-spacing: .15em; */ /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .5s step-end infinite;
-}
-
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: aqua }
-  }
-
-  .first_line,
-  .second_line {
-    white-space: nowrap; /* keep text in one line */
-    overflow: hidden; /* hide text behind the cursor */
+.first_line,
+.second_line {
+    white-space: nowrap;
+    /* keep text in one line */
+    overflow: hidden;
+    /* hide text behind the cursor */
     margin: 0 auto;
     text-align: center;
     /* font-family: "Major Mono Display", monospace; */
     /* font-size: 2rem; */
     font-weight: bold;
-  }
+}
 
-  .first_line {
+.first_line {
     border-right: .05em solid transparent;
     /* define animation types for text + cursor */
-    animation: typewriter_1 3.5s steps(40,end) 1s 1 normal both,
-      first_cursor .5s steps(40) 10;
-    
-  }
-  .second_line {
+    animation: typewriter_1 2.5s steps(40, end) 1s 1 normal both,
+        first_cursor .5s steps(40) 8;
+
+}
+
+.second_line {
     border-right: .05em solid transparent;
     /* define animation types for text + cursor */
-    animation: typewriter_2 3.5s steps(40,end) 1s 1 normal both,
-      second_cursor .5s step-end infinite;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-  }
+    animation: typewriter_2 2.5s steps(40, end) 1s 1 normal both,
+        second_cursor .5s step-end infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
 
-  @keyframes typewriter_1 {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  @keyframes typewriter_2 {
-    from { width: 0 }
-    to { width: 100% }
-  }
+@keyframes typewriter_1 {
+    from {
+        width: 0
+    }
 
-  @keyframes first_cursor {
-    from, to { border-color: transparent }
-    50% { border-color: aqua }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes typewriter_2 {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes first_cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: aqua
+    }
+
     51%,
     100% {
-    border-color: transparent;
+        border-color: transparent;
     }
-  }
-  @keyframes second_cursor{
-    from, to { border-color: transparent }
-    50% { border-color: aqua }
-  }
+}
+
+@keyframes second_cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: aqua
+    }
+}
 
 
 .container-button {
@@ -218,7 +223,7 @@ body {
 }
 
 /* Puts SVG and button text on the same height */
-.button-content-align { 
+.button-content-align {
     display: flex;
     align-items: center;
     gap: 5px
@@ -234,9 +239,52 @@ body {
     color: red;
 }
 
-/* .footer-color {
-    background-color: black;
-} */
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.contact-content h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.contact-content p {
+    color: #4A5568;
+    font-size: 1.25rem;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    text-decoration: none;
+    color: rgb(53, 135, 135);
+    font-weight: bold;
+}
 
 footer {
     padding-top: 3%;
@@ -254,8 +302,90 @@ footer {
     padding-bottom: 15px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .container-about {
+        width: 40%;
+    }
+
+    .container-projects{
+        width: 40%;
+    }
+
+    .container p {
+        width: 50%;
+    }
+
+    .container-contact {
+        width: 40%;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+
+    /* CSS rules for large screens */
+    .container-about {
+        width: 50%;
+    }
+
+    .container-projects {
+        width: 50%;
+    }
+
+    .container p {
+        width: 60%;
+    }
+
+    .container-contact {
+        width: 50%;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* CSS rules for medium screens */
+    .container-about {
+        width: 50%;
+    }
+
+    .container-projects {
+        width: 50%;
+    }
+
+    .container p {
+        width: 60%;
+    }
+
+    .container-contact {
+        width: 50%;
+    }
+}
+
+/* Small screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* CSS rules for small screens */
+    .container-about {
+        width: 80%;
+    }
+
+    .container-projects {
+        width: 80%;
+    }
+
+    .container-contact {
+        width: 80%;
+        padding-top: 10%;
+    }
+}
+
+/* Large smartphones */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS rules for large smartphones */
     .first_line h1,
     .second_line h1 {
         font-size: 1.4rem;
@@ -282,70 +412,74 @@ footer {
     .badges {
         padding-top: 5%;
     }
+
+    .container-contact {
+        width: 80%;
+        padding-top: 15%;
+    }
+
+    .container-contact .container-button {
+        padding-top: 2%;
+        padding-bottom: 10%;
+    }
+
+    .contact-content p {
+        font-size: 18px;
+    }
 }
 
-@media (min-width: 576px) {  
+/* Small smartphones */
+@media screen and (max-width: 480px) {
+
+    /* CSS rules for small smartphones */
+    .first_line h1,
+    .second_line h1 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+
     .container-about {
         width: 80%;
     }
 
     .container-projects {
         width: 80%;
-    }
-}
+        padding-top: 10%;
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .container-about {
+    }
+
+    .split-about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .badges {
+        padding-top: 5%;
+    }
+
+    .container-contact {
         width: 80%;
+        padding-top: 20%;
     }
 
-    .container-projects {
-        width: 80%;
+    .container-contact .container-button {
+        padding-top: 2%;
+        padding-bottom: 10%;
+    }
+
+    .contact-content p {
+        font-size: 18px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-    .container-about{
-        width: 50%;
-    }
+/* Tablets in landscape orientation */
+/* @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) { */
+    /* CSS rules for tablets in landscape orientation */
+/* } */
 
-    .container-projects{
-        width: 50%;
-    }
-
-    .container p {
-        width: 60%;
-    }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .container-about {
-        width: 50%;
-    }
-
-    .container-projects{
-        width: 50%;
-    }
-
-    .container p {
-        width: 60%;
-    }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-    .container-about {
-        width: 40%;
-    }
-
-    .container-projects{
-        width: 40%;
-    }
-
-    .container p {
-        width: 50%;
-    }
-}
+/* Tablets in portrait orientation */
+/* @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) { */
+    /* CSS rules for tablets in portrait orientation */
+/* } */
