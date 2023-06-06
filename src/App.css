@@ -239,6 +239,32 @@ body {
     color: red;
 }
 
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+}
+
+.container-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+    padding-top: 50px;
+}
+
+.container-badges .badge {
+    pointer-events: none;
+}
+
 .container-contact {
     display: flex;
     flex-direction: column;
@@ -317,6 +343,9 @@ footer {
         width: 50%;
     }
 
+    .container-skills {
+        width: 40%;
+    }
     .container-contact {
         width: 40%;
     }
@@ -336,6 +365,10 @@ footer {
 
     .container p {
         width: 60%;
+    }
+
+    .container-skills {
+        width: 50%;
     }
 
     .container-contact {
@@ -359,6 +392,10 @@ footer {
         width: 60%;
     }
 
+    .container-skills {
+        width: 50%;
+    }
+
     .container-contact {
         width: 50%;
     }
@@ -374,6 +411,14 @@ footer {
 
     .container-projects {
         width: 80%;
+    }
+
+    .container-skills {
+        width: 80%;
+    }
+
+    .container-badges {
+        width: 70%;
     }
 
     .container-contact {
@@ -411,6 +456,14 @@ footer {
 
     .badges {
         padding-top: 5%;
+    }
+
+    .container-skills {
+        width: 80%;
+    }
+
+    .container-badges {
+        width: 80%;
     }
 
     .container-contact {
@@ -457,6 +510,15 @@ footer {
 
     .badges {
         padding-top: 5%;
+        flex-wrap: wrap; /* So that the some badges go down on smaller screens if about to go out of bounds */
+    }
+
+    .container-skills {
+        width: 80%;
+    }
+
+    .container-badges {
+        width: 100%;
     }
 
     .container-contact {

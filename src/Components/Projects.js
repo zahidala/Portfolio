@@ -71,7 +71,7 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                <Badge bg="dark">Node</Badge>
+                <Badge bg="dark">Node.js</Badge>
                 <Badge bg="dark">Express</Badge>
                 <Badge bg="dark">MongoDB</Badge>
                 <Badge bg="dark">Bootstrap</Badge>
@@ -142,7 +142,7 @@ export default function Projects() {
               </div>
               <div className="badges">
                 <Badge bg="dark">React</Badge>
-                <Badge bg="dark">Node</Badge>
+                <Badge bg="dark">Node.js</Badge>
                 <Badge bg="dark">Express</Badge>
                 <Badge bg="dark">MongoDB</Badge>
               </div>
