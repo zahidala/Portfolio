@@ -19,8 +19,8 @@ export default function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href='#about' className='px-4 fw-semibold'>About</Nav.Link>
-            <Nav.Link href="#projects" className='px-4 fw-semibold'>Projects</Nav.Link>
             <Nav.Link href="#skills" className='px-4 fw-semibold'>Skills</Nav.Link>
+            <Nav.Link href="#projects" className='px-4 fw-semibold'>Projects</Nav.Link>
             <Nav.Link href="#contact" className='px-4 fw-semibold'>Contact</Nav.Link>
             <Nav.Link href="#resume" className='px-4 fw-semibold'>Resume</Nav.Link>
           </Nav>

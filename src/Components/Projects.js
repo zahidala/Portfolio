@@ -2,12 +2,15 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge'
+import { FaHtml5, FaPython, FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
+import { IoLogoJavascript, IoLogoCss3 } from 'react-icons/io'
+import { SiMongodb, SiPostgresql, SiExpress, SiDjango } from 'react-icons/si'
 
 export default function Projects() {
   return (
     <div>
         <div className='container-projects' id="projects">
-        <h6 style={{color: 'white'}}><span style={{color: 'aqua'}}>02.</span> Projects<hr /></h6>
+        <h6 style={{color: 'white'}}><span style={{color: 'aqua'}}>03.</span> Projects<hr /></h6>
         <div className='project-cards'>
           <Card>
             <Card.Img variant="top" src="https://i.ibb.co/ZxNk0fd/Snowman.png" />
@@ -36,9 +39,12 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                <Badge bg="dark">HTML</Badge>
+                {/* <Badge bg="dark">HTML</Badge>
                 <Badge bg="dark">CSS</Badge>
-                <Badge bg="dark">JavaScript</Badge>
+                <Badge bg="dark">JavaScript</Badge> */}
+                <Badge bg="dark"><FaHtml5 /> HTML </Badge>
+                <Badge bg="dark"><IoLogoCss3 /> CSS </Badge>
+                <Badge bg="dark"><IoLogoJavascript /> JavaScript </Badge>
               </div>
             </Card.Body>
           </Card>
@@ -71,16 +77,16 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                <Badge bg="dark">Node.js</Badge>
-                <Badge bg="dark">Express</Badge>
-                <Badge bg="dark">MongoDB</Badge>
-                <Badge bg="dark">Bootstrap</Badge>
+                <Badge bg="dark"><FaNodeJs />Node.js</Badge>
+                <Badge bg="dark"><SiExpress />Express</Badge>
+                <Badge bg="dark"><SiMongodb />MongoDB</Badge>
+                <Badge bg="dark"><FaBootstrap />Bootstrap</Badge>
               </div>
             </Card.Body>
           </Card>
 
           <Card>
-            <Card.Img variant="top" src="https://i.ibb.co/XC1Rq2t/House-of-Paws.png" />
+            <Card.Img variant="top" src="https://i.imgur.com/g6K7bBB.png" />
             <Card.Body>
               <Card.Title>House Of Paws</Card.Title>
               <Card.Text>
@@ -106,9 +112,10 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                <Badge bg="dark">Django</Badge>
-                <Badge bg="dark">PostgreSQL</Badge>
-                <Badge bg="dark">Bootstrap</Badge>
+                <Badge bg="dark"><SiDjango />Django</Badge>
+                <Badge bg="dark"><FaPython />Python</Badge>
+                <Badge bg="dark"><SiPostgresql />PostgreSQL</Badge>
+                <Badge bg="dark"><FaBootstrap />Bootstrap</Badge>
               </div>
             </Card.Body>
           </Card>
@@ -141,10 +148,10 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                <Badge bg="dark">React</Badge>
-                <Badge bg="dark">Node.js</Badge>
-                <Badge bg="dark">Express</Badge>
-                <Badge bg="dark">MongoDB</Badge>
+                <Badge bg="dark"><FaReact />React</Badge>
+                <Badge bg="dark"><FaNodeJs />Node.js</Badge>
+                <Badge bg="dark"><SiExpress />Express</Badge>
+                <Badge bg="dark"><SiMongodb />MongoDB</Badge>
               </div>
             </Card.Body>
           </Card>

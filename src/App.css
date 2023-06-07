@@ -172,7 +172,7 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .project-cards {
@@ -235,8 +235,14 @@ body {
     padding-top: 3%;
 }
 
+.badge {
+    color: white;
+    display: flex;
+    gap: 5px;
+}
+
 .badges .badge {
-    color: red;
+    color: lightcyan;
 }
 
 .container-skills {
@@ -355,6 +361,18 @@ footer {
 @media screen and (min-width: 1200px) {
 
     /* CSS rules for large screens */
+    #about {
+        scroll-margin-top: 6rem;
+    }
+
+    #skills {
+        scroll-margin-top: 1rem;
+    }
+    
+    #projects {
+        scroll-margin-top: 2rem;
+    }
+    
     .container-about {
         width: 50%;
     }
@@ -405,16 +423,30 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* CSS rules for small screens */
+    #about {
+        scroll-margin-top: 6rem;
+    }
+
+    #skills {
+        scroll-margin-top: -20px;
+    }
+
+    #projects {
+        scroll-margin-top: 1rem;
+    }
+
     .container-about {
         width: 80%;
     }
 
     .container-projects {
         width: 80%;
+        padding-top: 10%;
     }
 
     .container-skills {
         width: 80%;
+        padding-top: 15%;
     }
 
     .container-badges {
@@ -485,6 +517,18 @@ footer {
 @media screen and (max-width: 480px) {
 
     /* CSS rules for small smartphones */
+    #about {
+        scroll-margin-top: 18rem;
+    }
+
+    #skills {
+        scroll-margin-top: 13rem;
+    }
+
+    #projects {
+        scroll-margin-top: 10rem;
+    }
+
     .first_line h1,
     .second_line h1 {
         font-size: 1.4rem;
@@ -495,17 +539,20 @@ footer {
         width: 80%;
     }
 
-    .container-projects {
-        width: 80%;
-        padding-top: 10%;
-
-    }
-
     .split-about {
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .container-projects {
+        width: 80%;
+        padding-top: 30%;
+    }
+
+    .project-cards {
+        padding-top: 10%;
     }
 
     .badges {
@@ -515,10 +562,11 @@ footer {
 
     .container-skills {
         width: 80%;
+        padding-top: 20%;
     }
 
     .container-badges {
-        width: 100%;
+        width: 80%;
     }
 
     .container-contact {
@@ -529,6 +577,15 @@ footer {
     .container-contact .container-button {
         padding-top: 2%;
         padding-bottom: 10%;
+    }
+
+    .contact-content {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .contact-content h2 {
+        font-size: 1.5em;
     }
 
     .contact-content p {
