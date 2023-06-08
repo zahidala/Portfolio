@@ -239,6 +239,7 @@ body {
     color: white;
     display: flex;
     gap: 5px;
+    pointer-events: none;
 }
 
 .badges .badge {
@@ -265,10 +266,6 @@ body {
     margin-right: auto;
     gap: 5px;
     padding-top: 50px;
-}
-
-.container-badges .badge {
-    pointer-events: none;
 }
 
 .container-contact {
@@ -398,6 +395,18 @@ footer {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
     /* CSS rules for medium screens */
+    #about {
+        scroll-margin-top: 6rem;
+    }
+
+    #skills {
+        scroll-margin-top: 2rem;
+    }
+
+    #projects {
+        scroll-margin-top: 2rem;
+    }
+
     .container-about {
         width: 50%;
     }
@@ -463,6 +472,18 @@ footer {
 @media screen and (min-width: 481px) and (max-width: 767px) {
 
     /* CSS rules for large smartphones */
+    #about {
+        scroll-margin-top: 19rem;
+    }
+
+    #skills {
+        scroll-margin-top: 12rem;
+    }
+
+    #projects {
+        scroll-margin-top: 14rem;
+    }
+
     .first_line h1,
     .second_line h1 {
         font-size: 1.4rem;
@@ -492,6 +513,7 @@ footer {
 
     .container-skills {
         width: 80%;
+        padding-top: 15%;
     }
 
     .container-badges {
@@ -522,11 +544,11 @@ footer {
     }
 
     #skills {
-        scroll-margin-top: 13rem;
+        scroll-margin-top: 11rem;
     }
 
     #projects {
-        scroll-margin-top: 10rem;
+        scroll-margin-top: 11rem;
     }
 
     .first_line h1,
@@ -544,6 +566,7 @@ footer {
         align-items: center;
         flex-direction: column;
         gap: 3rem;
+        padding-top: 5%;
     }
 
     .container-projects {
@@ -562,7 +585,7 @@ footer {
 
     .container-skills {
         width: 80%;
-        padding-top: 20%;
+        padding-top: 30%;
     }
 
     .container-badges {

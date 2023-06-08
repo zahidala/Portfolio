@@ -5,6 +5,7 @@ import Badge from 'react-bootstrap/Badge'
 import { FaHtml5, FaPython, FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { IoLogoJavascript, IoLogoCss3 } from 'react-icons/io'
 import { SiMongodb, SiPostgresql, SiExpress, SiDjango } from 'react-icons/si'
+import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
   return (
@@ -12,6 +13,7 @@ export default function Projects() {
         <div className='container-projects' id="projects">
         <h6 style={{color: 'white'}}><span style={{color: 'aqua'}}>03.</span> Projects<hr /></h6>
         <div className='project-cards'>
+          <Fade bottom duration={500}>
           <Card>
             <Card.Img variant="top" src="https://i.ibb.co/ZxNk0fd/Snowman.png" />
             <Card.Body>
@@ -39,16 +41,15 @@ export default function Projects() {
               </Button>
               </div>
               <div className="badges">
-                {/* <Badge bg="dark">HTML</Badge>
-                <Badge bg="dark">CSS</Badge>
-                <Badge bg="dark">JavaScript</Badge> */}
                 <Badge bg="dark"><FaHtml5 /> HTML </Badge>
                 <Badge bg="dark"><IoLogoCss3 /> CSS </Badge>
                 <Badge bg="dark"><IoLogoJavascript /> JavaScript </Badge>
               </div>
             </Card.Body>
           </Card>
+          </Fade>
 
+          <Fade bottom duration={500}>
           <Card>
             <Card.Img variant="top" src="https://i.ibb.co/mBhBMQY/Comics-Website-1.png" />
             <Card.Body>
@@ -84,7 +85,9 @@ export default function Projects() {
               </div>
             </Card.Body>
           </Card>
+          </Fade>
 
+          <Fade bottom duration={500}>
           <Card>
             <Card.Img variant="top" src="https://i.imgur.com/g6K7bBB.png" />
             <Card.Body>
@@ -119,7 +122,9 @@ export default function Projects() {
               </div>
             </Card.Body>
           </Card>
+          </Fade>
 
+          <Fade bottom duration={500}>
           <Card>
             <Card.Img variant="top" src="https://i.ibb.co/cwK23C7/React-App.png" />
             <Card.Body>
@@ -155,6 +160,7 @@ export default function Projects() {
               </div>
             </Card.Body>
           </Card>
+          </Fade>
         </div>
         </div>
     </div>
