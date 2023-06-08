@@ -9,7 +9,7 @@ import { BsGit, BsGithub } from 'react-icons/bs'
 export default function Skills() {
   return (
     <div className='container-skills' id='skills'>
-        <h6 style={{ color: 'white' }}><span style={{ color: 'aqua' }}>02.</span> Skills <hr /></h6>
+        <h6><span>02.</span> Skills <hr /></h6>
         <div className="container-badges">
         <h5><Badge bg="black"><FaHtml5 /> HTML </Badge></h5>
         <h5><Badge bg="black"><IoLogoCss3 /> CSS </Badge></h5>

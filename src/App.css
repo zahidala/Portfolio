@@ -9,15 +9,6 @@
     font-family: 'Electrolize', sans-serif
 }
 
-/* .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-} */
-
-/* .nav-link:active {
-    color: aqua !important;
-} */
-
 body {
     background-color: #1A202C;
 }
@@ -26,25 +17,25 @@ body {
     color: white !important;
 }
 
-/* .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: rgba(0, 255, 255, 0.5) !important;
-} */
-
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: aqua !important;
 }
 
+h6 {
+    color: white
+}
 
-/* .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-    color: aqua !important;
-} */
+span {
+    color: aqua
+}
 
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
@@ -158,10 +149,14 @@ body {
 
 .split-about {
     display: flex;
-    /* align-items: center;  */
     justify-content: center;
     gap: 5rem;
     padding-top: 3%;
+}
+
+.split-about p {
+    color: white;
+    line-height: 1.8em;
 }
 
 .container-projects {
@@ -334,6 +329,10 @@ footer {
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
+    .container {
+        margin-top: 20px;
+    }
+
     .container-about {
         width: 40%;
     }
@@ -473,11 +472,11 @@ footer {
 
     /* CSS rules for large smartphones */
     #about {
-        scroll-margin-top: 19rem;
+        scroll-margin-top: 18rem;
     }
 
     #skills {
-        scroll-margin-top: 12rem;
+        scroll-margin-top: 13rem;
     }
 
     #projects {

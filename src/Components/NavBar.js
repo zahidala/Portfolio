@@ -1,5 +1,4 @@
 import React from 'react'
-// import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -13,7 +12,6 @@ export default function NavBar() {
   return (
     <>
     <Navbar collapseOnSelect expand="md" className='color-nav' variant="dark" sticky='top'>
-        {/* <Container> */}
           <Navbar.Brand href="#home" onClick={scrollToTop} className='ps-3'>Zahid Allaulddin</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className='mx-2' />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -25,7 +23,6 @@ export default function NavBar() {
             <Nav.Link href="#resume" className='px-4 fw-semibold'>Resume</Nav.Link>
           </Nav>
           </Navbar.Collapse>
-        {/* </Container> */}
       </Navbar>
     </>
   )

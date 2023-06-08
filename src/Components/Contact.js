@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 export default function Contact() {
     return (
         <div className='container-contact' id='contact'>
-            <h6 style={{ color: 'white' }}><span style={{ color: 'aqua' }}>04.</span> Contact <hr /></h6>
+            <h6><span>04.</span> Contact <hr /></h6>
             <div className='contact-content'>
                 <h2>
                     Let's stay in touch!
