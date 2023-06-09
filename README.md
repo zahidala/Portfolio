@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Portfolio HomePage](https://i.ibb.co/kgFStb2/Screen-Shot-2023-06-09-at-3-23-44-PM.png)
+![Portfolio HomePage](https://i.imgur.com/IOZECxN.png)
 
 # Portfolio
 
